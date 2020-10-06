@@ -13,4 +13,4 @@ This module targets sales email template (sales order, quotation, invoice).
 This module target sales documents (sales order, quotation, invoice) in PDF.
 
 *Feature*
-* Added one additional template to choose from, in addition to Odoo's 4 out of the box template.
+* Added one additional template to choose from, in addition to Odoo's 4 out of the box templates.
