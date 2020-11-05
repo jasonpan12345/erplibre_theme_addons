@@ -9,7 +9,7 @@ This module targets sales email template (sales order, quotation, invoice).
 * Dynamically links button color to your theme primary color under General Settings, instead of the hard-coded Odoo's purple.
 
 
-## Module: invoice_template_custom_erplibre
+## Module: document_template_custom_erplibre
 This module target sales documents (sales order, quotation, invoice) in PDF.
 
 *Feature*
