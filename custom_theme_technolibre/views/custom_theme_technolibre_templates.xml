@@ -1,0 +1,14 @@
+<?xml version= "1.0" encoding="utf-8"?>
+<odoo>
+  <template id="custom_theme_technolibre" inherit_id="website.assets_frontend" name="Custom Theme TechnoLibre" active="True">
+    <xpath expr="//link[last()]" position="after">
+      <link rel="stylesheet" type="text/scss" href="/custom_theme_technolibre/static/src/scss/_variables.scss"/>
+      <link rel="stylesheet" type="text/scss" href="/custom_theme_technolibre/static/src/scss/custom.scss"/>
+    </xpath>
+  </template>
+  <template id="custom_theme_technolibre" inherit_id="website._assets_primary_variables">
+    <xpath expr="//link[@href='/website/static/src/scss/primary_variables.scss']" position="replace">
+      <link rel="stylesheet" type="text/scss" href="/custom_theme_technolibre/static/src/scss/primary_variables.scss"/>
+    </xpath>
+  </template>
+</odoo>
