@@ -1,0 +1,17 @@
+// License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
+
+.s_avatar {
+	img {
+		width: 150px;
+		height: 150px;
+		object-fit: cover;
+		border-radius: 50%;
+		border: 2px solid white;
+	}
+}
+
+.s_image {
+	img {
+		object-fit: cover;
+	}
+}

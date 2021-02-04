@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2017 Tecnativa - Jairo Llopis
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl). -->
+
+<odoo>
+
+    <!-- Snippets body -->
+    <template id="s_avatar" name="Avatar">
+        <div class="oe_snippet_body s_avatar">
+            <img class="img img-fluid mx-auto"
+                src="/web/image/website.s_text_image_default_image"
+                alt="Avatar"/>
+        </div>
+    </template>
+
+    <template id="s_image" name="Image">
+        <div class="oe_snippet_body s_image">
+            <img class="img img-fluid"
+                src="/web/image/website.s_text_image_default_image"
+                alt="Image"/>
+        </div>
+    </template>
+
+    <!-- Add snippets to menu -->
+    <template id="snippets_erplibre" inherit_id="website.snippets">
+        <xpath expr="//*[@id='snippet_content']//*[hasclass('o_panel_body')]">
+            <t t-snippet="erplibre_website_snippet.s_avatar"
+               t-thumbnail="/erplibre_website_snippet/static/src/img/avatar.png"/>
+            <t t-snippet="erplibre_website_snippet.s_image"
+               t-thumbnail="/erplibre_website_snippet/static/src/img/image.png"/>
+        </xpath>
+    </template>
+
+    <!-- Add snippets options -->
+    <!-- <template id="snippet_options_erplibre" inherit_id="website.snippet_options"> -->
+    <!-- </template> -->
+
+</odoo>
