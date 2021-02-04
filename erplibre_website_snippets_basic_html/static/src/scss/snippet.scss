@@ -1,0 +1,57 @@
+// License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+
+// snippet content options
+.top-left{
+  top: 0;
+  left: 0;
+}
+.top-right{
+  top: 0;
+  right: 0;
+}
+.bottom-left{
+  bottom: 0;
+  left: 0;
+}
+.bottom-right{
+  bottom: 0;
+  right: 0;
+}
+.absolute-center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+// snippet content
+.o_avatar {
+	img {
+		width: 150px;
+		height: 150px;
+		object-fit: cover;
+		border-radius: 50%;
+		border: 2px solid #767676;
+	}
+}
+.o_image_fluid {
+	width: 100%;
+	object-fit: cover;
+}
+.o_bullets_finger {
+	margin: 24px 0;
+	padding: 0;
+	list-style: none;
+	li {
+		padding: 6px 0 6px 36px;
+		text-indent: -30px;
+		font-size: 16px;
+	}
+	li::before {
+		content: "👉 ";
+	}
+}
+.o_pill {
+	padding: 4px 8px;
+	border-radius: 12px;
+	font-weight: bolder;
+}
