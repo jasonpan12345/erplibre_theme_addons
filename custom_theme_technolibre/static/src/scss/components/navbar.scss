@@ -1,0 +1,55 @@
+.affixed #navbar-tl {
+    border-bottom: 5px solid var(--tl-yellow);
+    
+    .nav-item:nth-last-child(5) {
+        background: var(--tl-yellow);
+        padding: 0.5rem 2rem;
+        font-weight: 600;
+    }
+    .nav-item:nth-last-child(5):hover {
+        background: var(--tl-dark-yellow);
+    }
+    .nav-item:nth-last-child(5) .nav-link {
+        color: var(--tl-dark-blue) !important;
+    }
+}
+#navbar-tl {
+    background: var(--tl-dark-blue) !important;
+    color: var(--tl-light) !important;
+    padding: 1rem 20px;
+    
+    img {
+        height: 2.4rem;
+    }
+    .nav-link {
+        color: var(--tl-light) !important;
+    }
+    button {
+        outline: 0;
+        border: 0;
+        padding: 0;
+    }
+    .navbar-toggler-icon {
+        background-image: url("/web/image/3363/ri_menu-3-line.png");
+    }
+    .nav-item {
+        font-weight: 500;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        display: flex;
+        place-content: center center;
+    }
+    .divider {
+        display: none;
+    }
+    .nav-item:nth-last-child(1) {
+        padding: 0.5rem 2rem;
+        border: 1px solid var(--tl-yellow);
+    }
+    .nav-item:nth-last-child(1) .nav-link {
+        color: var(--tl-yellow) !important;
+    }
+    .nav-item:nth-last-child(1):hover {
+        background: rgba(255, 186, 26, 0.1);
+    }
+}

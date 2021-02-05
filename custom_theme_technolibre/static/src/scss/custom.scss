@@ -1,6 +1,6 @@
-html {
+@import 'components/index.scss';
+#wrapwrap {
     box-sizing: border-box;
-    font-family: 'Apercu', sans-serif;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
     font-size: 12px;
     transition: all 1s ease;
@@ -15,7 +15,7 @@ html {
 }
 
 // fonts
-h1, h2, h3, h4, h5, h6, p, ul {
+h1, h2, h3, h4, h5, h6, p, ul, a {
     font-family: 'Apercu', sans-serif !important;
 }
 h1 {
@@ -33,7 +33,7 @@ h4 {
 }
 h5,
 h6 {
-    font-size: 1rem i !important;
+    font-size: 1rem !important;
     line-height: 1.5 !important;
 }
 p, 
@@ -44,4 +44,15 @@ ul {
 a {
     font-size: 1.2rem;
     text-decoration: none !important;
+}
+
+.yellow-hl {
+    color: var(--tl-yellow);
+}
+.dblue-hl {
+    color: var(--tl-dark-blue);
+
+}
+.mono-hl {
+    font-family: 'Apercu Mono', monospace; 
 }

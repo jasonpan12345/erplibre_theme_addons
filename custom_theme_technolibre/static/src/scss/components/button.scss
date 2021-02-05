@@ -1,0 +1,31 @@
+.btn-yellow {
+    background-color: var(--tl-yellow);
+    color: var(--tl-dark-blue);
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    transition: background-color 0.5s ease;
+    font-weight: 600;
+}
+.btn-yellow:hover {
+    background-color: var(--tl-dark-yellow);
+    color: var(--tl-dark-blue);
+    cursor: pointer;
+}
+
+.btn-outline {
+    border: 1px solid var(--tl-dark-blue);
+    color: var(--tl-dark-blue);
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    transition: background-color 0.5s ease;
+    font-weight: 600;
+}
+.btn-outline:hover {
+    border: 1px solid var(--tl-yellow) !important;
+    background-color: var(--tl-yellow);
+    color: var(--tl-dark-blue);
+    border: none;
+    cursor: pointer;
+}
