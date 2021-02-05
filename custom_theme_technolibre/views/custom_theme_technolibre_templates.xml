@@ -6,9 +6,10 @@
       <link rel="stylesheet" type="text/scss" href="/custom_theme_technolibre/static/src/scss/custom.scss"/>
     </xpath>
   </template>
-  <template id="custom_theme_technolibre" inherit_id="website._assets_primary_variables">
+  <template id="custom_theme_technolibre_var" inherit_id="website._assets_primary_variables">
     <xpath expr="//link[@href='/website/static/src/scss/primary_variables.scss']" position="replace">
       <link rel="stylesheet" type="text/scss" href="/custom_theme_technolibre/static/src/scss/primary_variables.scss"/>
     </xpath>
   </template>
 </odoo>
+ 
