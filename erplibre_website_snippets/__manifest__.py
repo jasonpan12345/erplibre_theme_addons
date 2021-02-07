@@ -1,18 +1,13 @@
-# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
-    'name': 'ERPLibre Website Snippets',
-    'summary': 'Additional Website Snippets',
-    'version': '12.0.1.1.0',
+    'name': 'Demo website snippet content',
     'category': 'Website',
-    'license': 'AGPL-3',
+    'summary': 'Snippet integration in website',
+    'version': '12.0.1.1.0',
     'author': 'TechnoLibre',
     'website': 'https://technolibre.ca',
-    'application': False,
+    'license': 'AGPL-3',
+    'application': True,
+    'depends': ['website'],
+    'data': ['views/snippets.xml'],
     'installable': True,
-    'depends': [
-        'website',
-    ],
-    'data': [
-        'views/snippets.xml',
-    ],
 }

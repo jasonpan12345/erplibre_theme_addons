@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl). -->
-
+<!-- License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
   <!-- Snippets -->
   <template id="s_avatar" name="Avatar">
-    <div class="s_avatar">
-      <img class="img img-fluid mx-auto"
-           src="/erplibre_website_snippets/static/src/img/avatar.png"
-           alt="Avatar"/>
+    <div class="o_avatar">
+      <img class="img img-fluid mx-auto" src="/erplibre_website_snippets/static/src/img/avatar.png" alt="Avatar"/>
     </div>
   </template>
-
   <template id="s_image" name="Image">
-    <div class="s_image">
-      <img class="img img-fluid"
-           src="/erplibre_website_snippets/static/src/img/image.png"
-           alt="Image"/>
+    <div class="o_image">
+      <img class="img img-fluid" src="/erplibre_website_snippets/static/src/img/image.png" alt="Image"/>
     </div>
   </template>
-
-  <template id="s_btn_outline" name="Button Outline">
-    <div class="s_btn_outline text-center pt16 pb16" data-name="Buttons">
+  <template id="s_btn_outline" name="Btn Outline">
+    <div class="o_btn_outline text-center pt16 pb16" data-name="Buttons">
       <a href="#" class="btn btn-outline-primary">Read more</a>
     </div>
   </template>
-
+  <!-- Add snippets options -->
+  <template id="snippet_options" inherit_id="website.snippet_options">
+    <xpath expr=".">
+      <div data-selector=".o_avatar" data-drop-in=".row > div"/>
+      <div data-selector=".o_image" data-drop-in=".row > div"/>
+      <div data-selector=".o_btn_outline" data-drop-in=".row > div"/>
+    </xpath>
+  </template>
   <!-- Add snippets to menu -->
-  <template id="add_erplibre_snippet_to_menu" inherit_id="website.snippets">
-    <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+  <template id="snippets" inherit_id="website.snippets">
+    <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_body')]" position="inside">
       <t t-snippet="erplibre_website_snippets.s_avatar"
          t-thumbnail="/erplibre_website_snippets/static/src/img/avatar.png"/>
       <t t-snippet="erplibre_website_snippets.s_image"
@@ -36,15 +36,11 @@
          t-thumbnail="/website/static/src/img/snippets_thumbs/s_button.png"/>
     </xpath>
   </template>
-
-  <!-- Add snippets options -->
-  <!-- <template id="snippet_options_erplibre" inherit_id="website.snippet_options"> -->
-  <!-- </template> -->
-
   <!-- Add stylesheet -->
-  <template id="assets_frontend_erplibre_website_snippets" inherit_id="website.assets_frontend">
+  <template id="assets_frontend" inherit_id="website.assets_frontend">
     <xpath expr="//link[last()]" position="after">
-      <link rel="stylesheet" type="text/scss" href="/erplibre_website_snippets/static/src/scss/snippets.scss"/>
+      <link rel="stylesheet" type="text/scss"
+            href="/erplibre_website_snippets/static/src/scss/erplibre_website_snippets.scss"/>
     </xpath>
   </template>
 </odoo>
