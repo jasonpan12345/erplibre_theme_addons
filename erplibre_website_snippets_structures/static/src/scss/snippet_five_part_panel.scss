@@ -1,0 +1,32 @@
+// License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+
+.o_five_part_panel {
+  h3, h4 {
+    font-weight: bold;
+    padding: 1rem 0;
+  }
+  h3::before {
+    position: absolute;
+    content: '';
+    height: 0.5rem;
+    top: 1.5rem;
+    left: 0;
+    width: 4rem;
+    background: theme-color('primary');
+  }
+  h4::after {
+    position: absolute;
+    content: '';
+    height: 8px;
+    bottom: -0.5rem;
+    left: 0;
+    width: 48px;
+    background: theme-color('primary');
+  }
+  p {
+    padding-bottom: 1rem;
+  }
+  i {
+    color: theme-color('gamma');
+  }
+}
