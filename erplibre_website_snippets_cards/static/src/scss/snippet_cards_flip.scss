@@ -1,0 +1,89 @@
+// License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+
+.o_card_flip {
+  height: 480px;
+  perspective: 1000px;
+	margin: 1rem 0;
+	padding: 0 1rem;
+  
+  .card-flip__inner {
+    border: 1px solid #808080;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  h4 {
+    font-size: 1.4rem !important;
+    font-weight: bold;
+    text-align: center;
+  }
+  h5 {
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem !important;
+  }
+
+  .card-flip__front,
+  .card-flip__back {
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .card-flip__front {
+    background-color: theme-color('menu');
+    h5 {
+      align-self: end;
+      text-align: right;
+    }
+  }
+
+  .card-flip__back {
+    background-color: theme-color('epsilon');
+    transform: rotateY(180deg);
+    h5 {
+      text-align: center;
+    }
+  }
+
+  img {
+		width: 200px;
+		height: 200px;
+    border-radius: 50%;
+    object-fit: cover;  
+		overflow: hidden;
+    border: 2px solid lightgray;
+	}
+
+  .card-flip__icons {
+    width: 100%;
+    padding: 1rem;
+		display: flex;
+		justify-content: space-evenly;
+
+		i {
+			font-size: 2.4rem;
+		}
+	}
+
+  &.flippable {
+    cursor: pointer;
+  }
+
+  &.flippable.flipped .card-flip__inner {
+    transform: rotateY(180deg);
+  }
+}
