@@ -1,0 +1,46 @@
+// License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+
+#wrapwrap {
+  font-size: 16px;
+  font-family: Overpass, sans-serif !important;
+
+  h1, h2, h3 {
+    font-weight: 700;
+    font-family: 'Space Mono', sans-serif !important;
+  }
+  h1 {
+    font-size: 2rem !important;
+  }
+  h2 {
+    font-size: 2rem !important; 
+  }
+  h3 {
+    font-size: 1.75rem !important;
+  }
+  h4 {
+    font-size: 1.5rem !important;
+  }
+  h5 {
+    font-size: 1.25rem !important;
+  }
+  h6 {
+    font-size: 1rem !important;
+  }
+  p, ul {
+    line-height: 1.5 !important;
+    // font-family: Overpass, sans-serif !important;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  small {
+    font-size: 0.75rem;
+  }
+}
+
+
+@media (min-width: 768px) {
+  #wrapwrap h1 {
+    font-size: 2.5rem !important;
+  }
+}

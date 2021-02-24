@@ -1,0 +1,61 @@
+// License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+
+.affixed #navbar-tl {
+  border-bottom: 5px solid theme-color('alpha');
+  
+  .nav-item:nth-last-child(3) {
+    background: theme-color('primary');
+    padding: 0.5rem 1rem;
+  }
+  .nav-item:nth-last-child(3):hover {
+    background: #FFC640;
+  }
+  .nav-item:nth-last-child(3) .nav-link {
+    color: black !important;
+  }
+}
+#navbar-tl {
+  padding: 0.5rem 20px;
+  font-size: 18px !important;
+
+  .nav-link {
+    color: theme-color('secondary');
+  }
+  .nav-link:hover {
+    color: theme-color('primary');
+  }
+  .nav-link.active {
+    color: theme-color('primary');
+  }
+
+  img {
+    height: 1.8rem;
+  }
+  button {
+    outline: 0;
+    border: 0;
+    padding: 0;
+  }
+  .navbar-toggler-icon {
+    background-image: url("/theme_technolibre/static/src/img/ri_menu-3-line.png");
+  }
+  .nav-item {
+    margin: 0.25rem;
+    padding: 0.5rem;
+    display: flex;
+    place-content: center center;
+  }
+  .divider {
+    display: none;
+  }
+  .nav-item:nth-last-child(1) {
+    padding: 0.5rem 1rem;
+    border: 1px solid theme-color('alpha');
+  }
+  .nav-item:nth-last-child(1) .nav-link {
+    color: theme-color('alpha') !important;
+  }
+  .nav-item:nth-last-child(1):hover {
+    background: rgba(255, 186, 26, 0.1);
+  }
+}
