@@ -1,0 +1,19 @@
+// License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+
+.o_linked_image_grid {
+  .image_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,0.2);
+  }
+  .linked_image:hover .image_overlay{
+    opacity: 1;
+  }
+}

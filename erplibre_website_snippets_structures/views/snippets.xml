@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+  <!-- Snippet Structures -->
+  <template id="s_steps" name="Steps">
+    <section class="o_steps pt16 pb16">
+      <div class="container">
+        <div class="step">
+          <img class="step-img" src="/web/image/website.s_picture_default_image" alt="step 1"/>
+          <div class="step-info">
+            <div class="step-num">1</div>
+            <h3 class="o_h3">Lorem ipsum</h3>
+            <p class="o_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img class="step-line" src="/erplibre_website_snippets_structures/static/src/img/curve_r.png" alt="line linking steps"/>
+          </div>
+        </div>
+        <div class="step">
+          <img class="step-img" src="/web/image/website.s_picture_default_image" alt="step 2"/>
+          <div class="step-info">
+            <div class="step-num">2</div>
+            <h3 class="o_h3">Lorem ipsum</h3>
+            <p class="o_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img class="step-line" src="/erplibre_website_snippets_structures/static/src/img/curve_l.png" alt="line linking steps"/>
+          </div>
+        </div>
+        <div class="step">
+          <img class="step-img" src="/web/image/website.s_picture_default_image" alt="step 3"/>
+          <div class="step-info">
+            <div class="step-num">3</div>
+            <h3 class="o_h3">Lorem ipsum</h3>
+            <p class="o_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <template id="s_five_part_panel" name="5-Part Panel">
+    <section class="o_five_part_panel p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 py-3">
+            <h3 class="o_h3 position-relative pb24 pt56">ERPLibre rocks!</h3>
+            <p class="o_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col-lg-8 col-md-12">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12 p-3">
+                <i class="fa fa-2x fa-leaf rounded-circle bg-primary my-2"/>
+                <h4 class="o_h4 position-relative">Duplicate Me</h4>
+                <p class="o_p pt24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="col-lg-6 col-sm-12 p-3">
+                <i class="fa fa-2x fa-leaf rounded-circle bg-primary my-2"/>
+                <h4 class="o_h4 position-relative">Duplicate Me</h4>
+                <p class="o_p pt24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="col-lg-6 col-sm-12 p-3">
+                <i class="fa fa-2x fa-leaf rounded-circle bg-primary my-2"/>
+                <h4 class="o_h4 position-relative">Duplicate Me</h4>
+                <p class="o_p pt24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="col-lg-6 col-sm-12 p-3">
+                <i class="fa fa-2x fa-leaf rounded-circle bg-primary my-2"/>
+                <h4 class="o_h4 position-relative">Duplicate Me</h4>
+                <p class="o_p pt24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <template id="s_linked_image_grid" name="Linked Image Grid">
+    <section class="o_linked_image_grid p-3">
+      <div class="container">
+        <div class="row">
+          <div class="linked_image col-lg-8 col-md-12 px-0 w-100 position-relative" style="height: 400px; overflow: hidden; background-image: url('/web/image/website.s_picture_default_image')">
+            <a href="#">
+              <h4 class="mb-0 py-1 text-center position-absolute" style="bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.5)">Newspaper</h4>
+              <div class="image_overlay"/>
+            </a>
+          </div>
+          <div class="col-lg-4 px-0">
+            <div class="linked_image w-100 px-0 position-relative" style="height: 200px; overflow: hidden; background-image: url('/web/image/website.s_picture_default_image')">
+              <a href="#">
+                <h4 class="mb-0 py-1 text-center position-absolute" style="bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.5)">Events</h4>
+                <div class="image_overlay"/>
+              </a>
+            </div>
+            <div class="linked_image w-100 px-0 position-relative" style="height: 200px; overflow: hidden; background-image: url('/web/image/website.s_picture_default_image')">
+              <a href="#">
+                <h4 class="mb-0 py-1 text-center position-absolute" style="bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.5)">Media</h4>
+                <div class="image_overlay"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex flex-lg-row flex-column-reverse">
+          <div class="col-lg-4 px-0">
+            <div class="linked_image w-100 px-0 position-relative" style="height: 200px; overflow: hidden; background-image: url('/web/image/website.s_picture_default_image')">
+              <a href="#">
+                <h4 class="mb-0 py-1 text-center position-absolute" style="bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.5)">Events</h4>
+                <div class="image_overlay"/>
+              </a>
+            </div>
+            <div class="linked_image w-100 px-0 position-relative" style="height: 200px; overflow: hidden; background-image: url('/web/image/website.s_picture_default_image')">
+              <a href="#">
+                <h4 class="mb-0 py-1 text-center position-absolute" style="bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.5)">Media</h4>
+                <div class="image_overlay"/>
+              </a>
+            </div>
+          </div>
+          <div class="linked_image col-lg-8 col-md-12 px-0 w-100 position-relative" style="height: 400px; overflow: hidden; background-image: url('/web/image/website.s_picture_default_image')">
+            <a href="#">
+              <h4 class="mb-0 py-1 text-center position-absolute" style="bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.5)">Newspaper</h4>
+              <div class="image_overlay"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <!-- Add snippets to menu -->
+  <template id="add_snippet_structure_to_menu" inherit_id="website.snippets">
+    <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+      <t t-snippet="erplibre_website_snippets_structures.s_steps" t-thumbnail="/erplibre_website_snippets_structures/static/src/img/steps.png"/>
+      <t t-snippet="erplibre_website_snippets_structures.s_five_part_panel" t-thumbnail="/erplibre_website_snippets_structures/static/src/img/five_part_panel.png"/>
+      <t t-snippet="erplibre_website_snippets_structures.s_linked_image_grid" t-thumbnail="/erplibre_website_snippets_structures/static/src/img/linked_image_grid.png"/>
+    </xpath>
+  </template>
+
+  <!-- Add snippets options -->
+  <template id="snippet_options" inherit_id="website.snippet_options">
+    <xpath expr=".">
+      <!-- Background Image -->
+      <div data-js="background" 
+          data-selector=".linked_image">
+          <a tabindex="-1" href="#" class="dropdown-item" data-choose-image="true" data-no-preview="true"><i class="fa fa-picture-o"/>Background Image</a>
+      </div>
+
+     <!-- Background Position-->
+      <div data-js="background_position"
+          data-selector=".linked_image">
+          <a tabindex="-1" href="#" class="dropdown-item background_position_li" data-background-position="true" data-no-preview="true"><i class="fa fa-arrows"/>Background Image Sizing</a>
+      </div>
+    </xpath>
+  </template>
+
+  <!-- Add stylesheets -->
+  <template id="assets_frontend_erplibre_website_snippets_structures" inherit_id="website.assets_frontend">
+    <xpath expr="//link[last()]" position="after">
+      <link rel="stylesheet" type="text/scss" href="/erplibre_website_snippets_structures/static/src/scss/snippet_steps.scss" />
+      <link rel="stylesheet" type="text/scss" href="/erplibre_website_snippets_structures/static/src/scss/snippet_five_part_panel.scss" />
+      <link rel="stylesheet" type="text/scss" href="/erplibre_website_snippets_structures/static/src/scss/snippet_linked_image_grid.scss" />
+    </xpath>
+  </template>
+</odoo>

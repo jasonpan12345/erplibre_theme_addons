@@ -1,0 +1,98 @@
+// License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+
+.o_steps {
+  .step {
+    display: grid;
+    padding: 36px 0;
+    max-width: 450px;
+    margin: 0 auto;
+    img {
+      max-width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+  .step-info {
+    position: relative;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    h3 {
+      margin-bottom: 24px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .step-num {
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    font-size: 240px;
+    line-height: 1;
+    z-index: -1;
+    color: theme-color('alpha');
+  }
+  .step-line {
+    display: none;
+  }
+}
+
+
+@media (min-width: 900px) {
+  .o_steps {
+    .step {
+      max-width: none;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 60px;
+    }
+    .step:nth-child(even) .step-num {
+      right: 12px;
+    }
+    .step-num {
+      background-color: none;
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .o_steps {
+    .step-num {
+      font-size: 30px;
+      padding: 6px;
+      opacity: 1;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      border-radius: 50%;
+      font-weight: bold;
+      line-height: 1.5;
+      z-index: 1;
+      background-color: theme-color('alpha');
+      color: black;
+  
+      top: 24px;
+      left: -120px;
+    }
+    .step {
+      grid-gap: 180px;
+    }
+    .step:nth-child(even) .step-line,
+    .step:nth-child(4) .step-line {
+      display: block;
+      width: 30px; 
+      position: absolute;
+      top: 96px;
+      left: -120px;
+    }
+    .step:nth-child(odd) .step-line {
+      display: block;
+      width: 24px;
+      position: absolute;
+      top: 96px;
+      left: -90px;
+    }
+  }
+}
+
