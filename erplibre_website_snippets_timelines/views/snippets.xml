@@ -97,15 +97,14 @@
       <div data-js="colorpicker" data-selector=".timeline-inner, .fa">
         <div class="dropdown-submenu">
           <a tabindex="-1" href="#" class="dropdown-item">
-            <i class="fa fa-eyedropper"/>
-Color
+            <i class="fa fa-eyedropper"/>Color
           </a>
           <div class="dropdown-menu" role="menu"/>
         </div>
       </div>
 
       <!-- Drag & drop options -->
-      <div data-js="content" data-selector=".timeline-wrapper" data-drop-near="p, h1, h2, h3, blockquote, .s_btn, .s_card, .s_alert, .o_facebook_page, .s_share, .s_rating, .s_hr, .o_avatar, .o_image_fluid, .o_btn_outline, .o_bullets_finger, .o_h1, .o_h2, .o_h3, .o_h4, .o_h5, .o_h6, .o_p, .o_small, .o_pill, .timeline-wrapper" data-drop-in=".content"/>
+      <div data-js="content" data-selector=".timeline-wrapper" data-drop-near="p, h1, h2, h3, blockquote, .s_btn, .s_card, .s_alert, .o_facebook_page, .s_share, .s_rating, .s_hr, .o_avatar, .o_image_fluid, .o_bullets_finger, .o_h1, .o_h2, .o_h3, .o_h4, .o_h5, .o_h6, .o_p, .o_small, .o_pill, .timeline-wrapper" data-drop-in=".content"/>
     </xpath>
   </template>
 

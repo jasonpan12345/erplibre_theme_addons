@@ -12,12 +12,6 @@
     <img class="o_image_fluid img img-fluid" src="/web/image/website.s_picture_default_image" alt="Media"/>
   </template>
 
-  <template id="s_btn_outline" name="Button Outline">
-    <div class="o_btn_outline text-center pt16 pb16" data-name="Buttons">
-      <a href="#" class="btn btn-outline-primary">Read more</a>
-    </div>
-  </template>
-
   <template id="s_bullets_finger" name="Finger Bullets">
     <ul class="o_bullets_finger">
       <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
@@ -66,7 +60,7 @@
 
   <!-- Snippet Structure -->
   <template id="s_section_header" name="Section Header">
-    <section class="o_section_header text-center pt16 pb16">
+    <section class="o_section_header text-center pt64 pb16">
       <div class="container">
         <h5 class="o_h5 pt8 pb4">Lorem ipsum dolor sit amet</h5>
         <h2 class="o_h2 pt4 pb8">Lorem ipsum</h2>
@@ -79,7 +73,6 @@
     <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_body')]" position="inside">
       <t t-snippet="erplibre_website_snippets_basic_html.s_avatar" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/avatar.png"/>
       <t t-snippet="erplibre_website_snippets_basic_html.s_media" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/media.png"/>
-      <t t-snippet="erplibre_website_snippets_basic_html.s_btn_outline" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/btn_outline.png"/>
       <t t-snippet="erplibre_website_snippets_basic_html.s_bullets_finger" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/bullets_finger.png"/>
       <t t-snippet="erplibre_website_snippets_basic_html.s_h1" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/h1.png"/>
       <t t-snippet="erplibre_website_snippets_basic_html.s_h2" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/h2.png"/>
@@ -104,7 +97,7 @@
   <template id="snippet_options" inherit_id="website.snippet_options">
     <xpath expr=".">
       <!-- Horizontal alignment options | Screensize lg or above-->
-      <div data-selector=".o_avatar, .o_image_fluid, .o_btn_outline, .o_h1, .o_p, .o_small, .s_btn">
+      <div data-selector=".o_avatar, .o_image_fluid, .o_h1, .o_p, .o_small, .s_btn">
         <div class="dropdown-submenu">
           <a tabindex="-2" href="#" class="dropdown-item">
             <i class="fa fa-desktop"/>Alignment(+=LG)</a>
@@ -117,7 +110,7 @@
       </div>
       
       <!-- Horizontal alignment options | Screensize md or below-->
-      <div data-selector=".o_avatar, .o_image_fluid, .o_btn_outline, .o_h1, .o_p, .o_small, .s_btn">
+      <div data-selector=".o_avatar, .o_image_fluid, .o_h1, .o_p, .o_small, .s_btn">
         <div class="dropdown-submenu">
           <a tabindex="-2" href="#" class="dropdown-item">
             <i class="fa fa-mobile-phone"/>Alignment(-=MD)
@@ -131,10 +124,10 @@
       </div>
 
       <!-- Vertical alignment options -->
-      <div data-js="sizing_y" data-selector=".o_avatar, .o_image_fluid, .o_btn_outline, o_bullets_finger, .o_h1, .o_h2, .o_h3, .o_h4, .o_h5, .o_h6, .o_p, .o_small"/>
+      <div data-js="sizing_y" data-selector=".o_avatar, .o_image_fluid, o_bullets_finger, .o_h1, .o_h2, .o_h3, .o_h4, .o_h5, .o_h6, .o_p, .o_small"/>
 
       <!-- Hidden options based on screensize-->
-      <div data-selector=".o_image_fluid, .o_btn_outline">
+      <div data-selector=".o_image_fluid">
         <div class="dropdown-submenu">
           <a tabindex="-2" href="#" class="dropdown-item">
             <i class="fa fa-eye"/>Visiblility
@@ -189,8 +182,8 @@
 
       <!-- Drag & drop options -->
       <div data-js="content" 
-        data-selector=".o_avatar, .o_image_fluid, .o_btn_outline, .o_bullets_finger, .o_h1, .o_h2, .o_h3, .o_h4, .o_h5, .o_h6, .o_p, .o_small, .o_pill"
-        data-drop-near="p, h1, h2, h3, blockquote, .s_btn, .s_card, .s_alert, .o_facebook_page, .s_share, .s_rating, .s_hr, .o_avatar, .o_image_fluid, .o_btn_outline, .o_bullets_finger, .o_h1, .o_h2, .o_h3, .o_h4, .o_h5, .o_h6, .o_p, .o_small, .o_pill"
+        data-selector=".o_avatar, .o_image_fluid, .o_bullets_finger, .o_h1, .o_h2, .o_h3, .o_h4, .o_h5, .o_h6, .o_p, .o_small, .o_pill"
+        data-drop-near="p, h1, h2, h3, blockquote, .s_btn, .s_card, .s_alert, .o_facebook_page, .s_share, .s_rating, .s_hr, .o_avatar, .o_image_fluid, .o_bullets_finger, .o_h1, .o_h2, .o_h3, .o_h4, .o_h5, .o_h6, .o_p, .o_small, .o_pill"
         data-drop-in=".content"/>
     </xpath>
   </template>
