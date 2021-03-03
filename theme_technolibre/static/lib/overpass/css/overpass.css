@@ -1,0 +1,22 @@
+/*!
+ *
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'Overpass';
+  src: url("../fonts/Overpass-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Overpass';
+  src: url("../fonts/Overpass-Bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'Overpass';
+  src: url("../fonts/Overpass-Light.ttf") format("opentype");
+  font-weight: 300;
+  font-style: light;
+}

@@ -1,0 +1,16 @@
+/*!
+ *
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'Space Mono';
+  src: url("../fonts/SpaceMono-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Space Mono';
+  src: url("../fonts/SpaceMono-Bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: bold;
+}

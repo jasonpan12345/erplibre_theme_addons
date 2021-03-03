@@ -1,0 +1,53 @@
+// License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+
+#hero-center {
+  color: white;
+  padding: 20px;
+  position: relative;
+  text-align: left;
+  height: 100vh;
+
+  h1 {
+    max-width: 90vw;
+    margin-bottom: 1rem;
+  }
+  p {
+    max-width: 70vw;
+    margin-bottom: 2rem;
+  }
+
+  img {
+    width: 70vw;
+    max-width: 460px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  #hero-center {
+    padding-top: 100px;
+    height: calc(100vh - 200px);
+  }
+}
+@media (min-width: 768px) {
+  #hero-center p {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  #hero-center {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    h1, p {
+      max-width: unset;
+    }
+  }
+}
