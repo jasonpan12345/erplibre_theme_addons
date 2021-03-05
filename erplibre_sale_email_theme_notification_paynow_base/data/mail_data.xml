@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <template id="mail_notification_paynow_theme_color" name="Mail: Pay Now mail notification template - theme color" inherit_id="mail.mail_notification_paynow">
+
+      <!-- get the color from sale.order modal -->
+      <xpath expr="//tbody" position="before">
+        <t t-set="primary_color" t-value="record.get_theme_color()"/>
+      </xpath>
+
+      <!-- link button color to theme colors -->
+      <xpath expr="//tbody/tr[2]/td/div[1]/a" position="attributes">
+        <attribute name="style"></attribute>
+        <attribute name="t-att-style">'background-color: ' + primary_color + '; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;'</attribute>
+      </xpath>
+
+    </template>
+
+  </data>
+</odoo>
