@@ -1,0 +1,111 @@
+.o_report_layout_erplibre_vertical_header {
+    font-family: inherit;
+    width: 100%;
+    display: flex;
+    background: white;
+    position: relative;
+}
+.pagenumber {
+    width: 100%;
+    text-align: center;
+    color: black;
+    p {
+        margin-bottom: 0;
+    }
+}
+.o_header_erplibre_vertical_header {
+    margin-top: 48mm;
+    width: 25%;
+    min-height: 262mm;
+    padding: 1rem;
+    background-color: darken($o-brand-secondary, 25%);
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    .header_erplibre_vertical_header__logo {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .header_erplibre_vertical_header__info {
+        margin: 3rem 0;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        li {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+.o_report_layout_erplibre_vertical_header .layout_erplibre_vertical_header__content {
+    padding: 1rem;
+    margin-top: 48mm;
+    width: 75%;
+
+    table {
+        table-layout: fixed;
+        width:100%;
+    }
+    th {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    h2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25%;
+        max-width: 25%;
+        background: $o-brand-primary;
+        margin: 0;
+        padding: 0 1rem;
+        display: table;
+        span {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            height: 48mm;
+        }
+    }
+    #informations {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0 !important;
+        p {
+            border-top: 1px solid black;
+        }
+    }
+    .address {
+        width: 100%;
+        padding: 1rem 0;
+
+        div[name="address"] {
+            margin-left: 0 !important;
+        }
+    }
+    thead {
+        background: $o-brand-primary;
+    }
+    // invoice table
+    .invoice_tbody td {
+        border: 1px solid darken($o-brand-secondary, 15%);
+    }
+    .invoice_tbody tr:nth-child(odd) {
+        background-color: $o-brand-secondary;
+    }
+    // sale order table
+    .sale_tbody td {
+        border: 1px solid darken($o-brand-secondary, 15%);
+    }
+    .sale_tbody tr:nth-child(odd) {
+        background-color: $o-brand-secondary;
+    }
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- Assets for reports -->
+  <template id="report_assets_erplibre_vertical_header" inherit_id="web.report_assets_common">
+    <xpath expr="//link[last()]">
+      <link rel="stylesheet" type="text/scss" href="/erplibre_sale_report_template_vertical_header/static/src/scss/layout_erplibre_vertical_header.scss"/>
+    </xpath>
+  </template>
+
+  <!-- Adapt address layout -->
+  <template id="address_layout_erplibre_vertical_header" inherit_id="web.address_layout">
+    <xpath expr="//div[@name='address']" position="before">
+      <t t-set="colclass" t-value="'col-6'"/>
+    </xpath>
+    <xpath expr="//div[@name='address']/t[1]" position="before">
+      <strong>Customer Address:</strong>
+    </xpath>
+  </template>
+
+  <!-- conditional to company.external_report_layout_id.key, set full width  -->
+  <template id="report_layout_erplibre_vertical_header" inherit_id="web.report_layout">
+    <xpath expr="//body/div[@id='wrapwrap']/main" position="before">
+      <!-- set company -->
+      <t t-if="not company">
+        <!-- Multicompany -->
+        <t t-if="company_id">
+          <t t-set="company" t-value="company_id"/>
+        </t>
+        <t t-elif="o and 'company_id' in o">
+          <t t-set="company" t-value="o.company_id.sudo()"/>
+        </t>
+        <t t-else="else">
+          <t t-set="company" t-value="res_company"/>
+        </t>
+      </t>
+      <t t-if="company.external_report_layout_id">
+        <t t-if="company.external_report_layout_id.key == 'erplibre_sale_report_template_vertical_header.external_layout_erplibre_vertical_header'">
+          <t t-set="full_width" t-value="True"/>
+        </t>
+      </t>
+    </xpath>
+  </template>
+
+  <template id="external_layout_erplibre_vertical_header">
+    <div class="article o_report_layout_erplibre_vertical_header" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+      <div class="o_header_erplibre_vertical_header">
+        <div class="header_erplibre_vertical_header__logo">
+          <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" alt="Logo"/>
+        </div>
+        <ul class="header_erplibre_vertical_header__info" name="company_address">
+          <strong>
+            <li t-if="company.name">
+              <span t-field="company.name"/>
+            </li>
+          </strong>
+          <li>
+            <span class="company_address" t-field="company.partner_id" t-options='{"widget": "contact", "fields": ["address"], "no_marker": true}'/>
+          </li>
+          <li t-if="company.vat">
+            <t t-esc="company.country_id.vat_label or 'Tax ID'"/>
+:            <span t-field="company.vat"/>
+          </li>
+          <li t-if="company.phone">Tel: <span t-field="company.phone"/>
+          </li>
+          <li t-if="company.email">
+            <span t-field="company.email"/>
+          </li>
+          <li t-if="company.website">
+            <span t-field="company.website"/>
+          </li>
+        </ul>
+      </div>
+
+      <div class="layout_erplibre_vertical_header__content">
+        <t t-call="web.address_layout"/>
+        <t t-raw="0"/>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div t-if="report_type == 'pdf'" class="pagenumber">
+                Page:
+        <span class="page"/>
+                of
+        <span class="topage"/>
+      </div>
+    </div>
+  </template>
+
+</odoo>
