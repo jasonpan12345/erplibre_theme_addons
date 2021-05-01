@@ -27,10 +27,16 @@
 
 @media (min-width: 576px) {
   #hero-center {
+    img {
+      margin-bottom: -120px;
+      width: 55vw;
+    }
+
     padding-top: 100px;
     height: calc(100vh - 200px);
   }
 }
+
 @media (min-width: 768px) {
   #hero-center p {
     font-size: 1.25rem !important;
