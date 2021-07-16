@@ -8,7 +8,7 @@
   'author': 'TechnoLibre',
   'website': 'https://technolibre.ca',
   'license': 'AGPL-3',
-  'application': True,
+  'application': False,
   'depends': ['website'],
   'data': ['views/snippets.xml'],
   'installable': True,
