@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+  <!-- Snippet Content-->
+  <template id="s_hello_world" name="Hello World">
+    <div class="o_avatar">
+      <h1 class="hello_world_text">Hello World</h1>
+    </div>
+  </template>
+
+  <!-- Snippet Structure -->
+  <template id="s_section_header" name="Section Header">
+    <section class="o_section_header text-center pt64 pb16">
+      <div class="container">
+        <h5 class="o_h5 pt8 pb4">Lorem ipsum dolor sit amet</h5>
+        <h2 class="o_h2 pt4 pb8">Lorem ipsum</h2>
+      </div>
+    </section>
+  </template>
+
+  <!-- Add snippet_content to menu -->
+  <template id="add_snippet_content_to_menu" inherit_id="website.snippets">
+    <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_body')]" position="inside">
+      <t t-snippet="erplibre_website_snippets_helloworld.s_hello_world" t-thumbnail="/erplibre_website_snippets_helloworld/static/src/img/avatar.png"/>
+    </xpath>
+  </template>
+
+  <!-- Add snippet_structure to menu -->
+  <template id="add_snippet_structure_to_menu" inherit_id="website.snippets">
+    <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+      <t t-snippet="erplibre_website_snippets_helloworld.s_section_header" t-thumbnail="/erplibre_website_snippets_helloworld/static/src/img/section_header.png"/>
+    </xpath>
+  </template>
+
+  <!-- Add stylesheet -->
+  <template id="assets_frontend_erplibre_website_snippets_basic_html" inherit_id="website.assets_frontend">
+    <xpath expr="//link[last()]" position="after">
+      <link rel="stylesheet" type="text/scss" href="/erplibre_website_snippets_basic_html/static/src/scss/snippet.scss"/>
+    </xpath>
+  </template>
+</odoo>
