@@ -1,5 +1,14 @@
 // License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
+
+.o_hello_world{
+    top: 0;
+    left: 0;
+    font-size: medium;
+    .secondary_text{
+        color: red;
+    }
+}
 // snippet content options
 .top-left{
   top: 0;
