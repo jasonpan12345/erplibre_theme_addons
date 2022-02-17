@@ -68,6 +68,15 @@
     </section>
   </template>
 
+  <!-- Customize header  -->
+<template id="custom_header" inherit_id="website.layout" name="Custom Header">
+
+  <!-- Assign an id  -->
+  <xpath expr="//div[@id='wrapwrap']/header/nav" position="attributes">
+    <attribute name="id">navbar</attribute>
+  </xpath>
+</template>
+
   <!-- Add snippet_content to menu -->
   <template id="add_snippet_content_to_menu" inherit_id="website.snippets">
     <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_body')]" position="inside">
@@ -143,7 +152,7 @@
       <div data-selector=".o_image_fluid, .o_h3, .o_h4">
         <div class="dropdown-submenu">
           <a tabindex="-2" href="#" class="dropdown-item">
-            <i class="fa fa-css3"/>Position
+            <i class="fa fa-css3"/>PositionFf
           </a>
           <div class="dropdown-menu" role="menu">
             <a href="#" class="dropdown-item" data-select-class="position-relative">Relative</a>
@@ -170,6 +179,25 @@
         </div>
       </div>
 
+      <!-- Navbar height options -->
+      <div data-js="topMenuHeight" data-selector=".navbar, .o_h1, .o_h4"
+      data-no-check="true">
+        <div class="dropdown-submenu">
+          <a tabindex="-2" href="#" class="dropdown-item">
+            <i class="fa fa-arrows"/>Height
+          </a>
+          <div class="dropdown-menu" role="menu">
+            <a href="#" class="dropdown-item" data-select-class="">Default height</a>
+            <div class="dropdown-divider"/>
+            <a href="#" class="dropdown-item" data-select-class="height-shortest">60px</a>
+            <a href="#" class="dropdown-item" data-select-class="height-short">70px</a>
+            <a href="#" class="dropdown-item" data-select-class="height-medium">80px</a>
+            <a href="#" class="dropdown-item" data-select-class="height-tall">90px</a>
+            <a href="#" class="dropdown-item" data-select-class="height-tallest">100px</a>
+          </div>
+        </div>
+      </div>
+
       <!-- Color options -->
 			<div data-js="colorpicker" data-selector=".o_pill, .o_image_fluid">
         <div class="dropdown-submenu">
@@ -186,6 +214,21 @@
         data-drop-near="p, h1, h2, h3, blockquote, .s_btn, .s_card, .s_alert, .o_facebook_page, .s_share, .s_rating, .s_hr, .o_avatar, .o_image_fluid, .o_bullets_finger, .o_h1, .o_h2, .o_h3, .o_h4, .o_h5, .o_h6, .o_p, .o_small, .o_pill"
         data-drop-in=".content"/>
     </xpath>
+
+    <!-- Footer Align-->
+      <div data-selector="#footer">
+        <div class="dropdown-submenu">
+          <a tabindex="-2" href="#" class="dropdown-item">
+            <i class="fa fa-arrows"/>Footer Align
+          </a>
+          <div class="dropdown-menu" role="menu">
+            <a href="#" class="dropdown-item" data-select-class="align-center">Align-center</a>
+            <a href="#" class="dropdown-item" data-select-class="align-right">Align-right</a>
+            <a href="#" class="dropdown-item" data-select-class="align-left">Align-left</a>
+            <a href="#" class="dropdown-item" data-select-class="align-left">Align-sides</a>
+          </div>
+        </div>
+      </div>
   </template>
 
   <!-- Add stylesheet -->
