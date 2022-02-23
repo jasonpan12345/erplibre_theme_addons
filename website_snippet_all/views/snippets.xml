@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <!-- Snippets -->
+    <template id="s_website_snippet_all" name="Website Snippet All">
+        <section class="o_website_snippet_all oe_snippet_body">
+            <div class="container">
+                <div class="row mt16 mb16">
+                    <div class="text-center website_snippet_all_value">Hello</div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- Add snippets to menu -->
+    <template id="snippets" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="website_snippet_all.s_website_snippet_all" t-thumbnail="/website_snippet_all/static/description/icon.png"/>
+            <t t-snippet="website_snippet_all.s_color_blocks_2" t-thumbnail="/website_snippet_all/static/description/s_color_block.png"/>
+        </xpath>
+    </template>
+</odoo>
