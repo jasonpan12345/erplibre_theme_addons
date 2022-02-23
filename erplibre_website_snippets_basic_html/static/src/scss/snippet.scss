@@ -55,3 +55,16 @@
 	border-radius: 12px;
 	font-weight: bolder;
 }
+
+/* mobile alignment */
+@media only screen and (max-width: 990px) {
+	.mobile-align-right * {
+		text-align: right !important;
+	}
+	.mobile-align-left * {
+		text-align: left !important;
+	}
+	.mobile-align-center * {
+		text-align: center !important;
+	}
+}
