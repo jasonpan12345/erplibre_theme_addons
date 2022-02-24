@@ -27,6 +27,7 @@
             <t t-snippet="website_snippet_all.s_event_list" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_event_list.png"/>
             <t t-snippet="website_snippet_all.s_discount" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_comparison.png"/>
             <t t-snippet="website_snippet_all.s_pricing" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_comparison.png"/>
+            <t t-snippet="website_snippet_all.s_process_steps" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_process_step.png"/>
         </xpath>
     </template>
 </odoo>

@@ -19,6 +19,7 @@
         "views/s_event_list.xml",
         "views/s_discount.xml",
         "views/s_pricing.xml",
+        "views/s_process_steps.xml",
     ],
     "installable": True,
 }
