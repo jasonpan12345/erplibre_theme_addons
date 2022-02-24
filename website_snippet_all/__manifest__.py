@@ -13,6 +13,7 @@
         "views/s_color_blocks_4.xml",
         "views/s_column.xml",
         "views/s_two_columns.xml",
+        "views/s_three_columns_circle.xml",
     ],
     "installable": True,
 }
