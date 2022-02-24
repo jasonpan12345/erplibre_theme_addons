@@ -17,6 +17,7 @@
         "views/s_three_columns_circle.xml",
         "views/s_timeline.xml",
         "views/s_event_list.xml",
+        "views/s_discount.xml",
     ],
     "installable": True,
 }
