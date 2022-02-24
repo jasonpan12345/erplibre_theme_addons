@@ -15,7 +15,8 @@
     <template id="snippets" inherit_id="website.snippets">
         <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
             <t t-snippet="website_snippet_all.s_website_snippet_all" t-thumbnail="/website_snippet_all/static/description/icon.png"/>
-            <t t-snippet="website_snippet_all.s_color_blocks_2" t-thumbnail="/website_snippet_all/static/description/s_color_block.png"/>
+            <t t-snippet="website_snippet_all.s_color_blocks_2" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_color_block.png"/>
+            <t t-snippet="website_snippet_all.s_color_blocks_4" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_color_block.png"/>
         </xpath>
     </template>
 </odoo>

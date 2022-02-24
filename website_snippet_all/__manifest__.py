@@ -7,6 +7,10 @@
     "website": "https://technolibre.ca",
     "application": True,
     "depends": ["website"],
-    "data": ["views/snippets.xml", "views/s_color_blocks_2.xml"],
+    "data": [
+        "views/snippets.xml",
+        "views/s_color_blocks_2.xml",
+        "views/s_color_blocks_4.xml",
+    ],
     "installable": True,
 }
