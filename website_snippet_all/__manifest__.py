@@ -16,6 +16,7 @@
         "views/s_two_columns.xml",
         "views/s_three_columns_circle.xml",
         "views/s_timeline.xml",
+        "views/s_event_list.xml",
     ],
     "installable": True,
 }
