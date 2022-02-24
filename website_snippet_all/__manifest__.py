@@ -11,6 +11,7 @@
         "views/snippets.xml",
         "views/s_color_blocks_2.xml",
         "views/s_color_blocks_4.xml",
+        "views/s_column.xml",
     ],
     "installable": True,
 }

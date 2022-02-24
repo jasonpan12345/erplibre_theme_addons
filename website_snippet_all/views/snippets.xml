@@ -17,6 +17,7 @@
             <t t-snippet="website_snippet_all.s_website_snippet_all" t-thumbnail="/website_snippet_all/static/description/icon.png"/>
             <t t-snippet="website_snippet_all.s_color_blocks_2" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_color_block.png"/>
             <t t-snippet="website_snippet_all.s_color_blocks_4" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_color_block.png"/>
+            <t t-snippet="website_snippet_all.s_column" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_column.png"/>
         </xpath>
     </template>
 </odoo>
