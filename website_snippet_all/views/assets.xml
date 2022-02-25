@@ -27,6 +27,7 @@
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_big_image.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_big_image_parallax.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_text_highlight.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_team_profiles.scss"/>
         </xpath>
     </template>
 
