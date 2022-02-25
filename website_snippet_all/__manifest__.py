@@ -10,6 +10,7 @@
     "data": [
         "views/snippets.xml",
         "views/assets.xml",
+        "views/image_content.xml",
         "views/s_color_blocks_2.xml",
         "views/s_color_blocks_4.xml",
         "views/s_column.xml",
@@ -21,6 +22,7 @@
         "views/s_pricing.xml",
         "views/s_process_steps.xml",
         "views/s_icon_box.xml",
+        "views/s_big_image.xml",
     ],
     "installable": True,
 }

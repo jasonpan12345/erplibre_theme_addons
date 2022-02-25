@@ -1,4 +1,32 @@
 
+$o-theme-bg-img-01: url("/website_snippet_all/static/src/img/backgrounds/bg_img_01.jpg");
+$o-theme-bg-img-02: url("/website_snippet_all/static/src/img/backgrounds/bg_img_02.jpg");
+$o-theme-bg-img-03: url("/website_snippet_all/static/src/img/backgrounds/bg_img_03.jpg");
+$o-theme-bg-img-04: url("/website_snippet_all/static/src/img/backgrounds/bg_img_04.jpg");
+$o-theme-bg-img-05: url("/website_snippet_all/static/src/img/backgrounds/bg_img_05.jpg");
+$o-theme-bg-img-06: url("/website_snippet_all/static/src/img/backgrounds/bg_img_06.jpg");
+$o-theme-bg-img-07: url("/website_snippet_all/static/src/img/backgrounds/bg_img_07.jpg");
+$o-theme-bg-img-08: url("/website_snippet_all/static/src/img/backgrounds/bg_img_08.jpg");
+$o-theme-bg-img-09: url("/website_snippet_all/static/src/img/backgrounds/bg_img_09.jpg");
+$o-theme-bg-img-10: url("/website_snippet_all/static/src/img/backgrounds/bg_img_10.jpg");
+$o-theme-bg-img-11: url("/website_snippet_all/static/src/img/backgrounds/bg_img_11.jpg");
+$o-theme-bg-img-12: url("/website_snippet_all/static/src/img/backgrounds/bg_img_12.jpg");
+
+@include o-theme-chd-bg-img-classes(
+  $bg1: ($o-theme-bg-img-01),
+  $bg2: ($o-theme-bg-img-02),
+  $bg3: ($o-theme-bg-img-03),
+  $bg4: ($o-theme-bg-img-04),
+  $bg5: ($o-theme-bg-img-05),
+  $bg6: ($o-theme-bg-img-06),
+  $bg7: ($o-theme-bg-img-07),
+  $bg8: ($o-theme-bg-img-08),
+  $bg9: ($o-theme-bg-img-09),
+  $bg10: ($o-theme-bg-img-10),
+  $bg11: ($o-theme-bg-img-11),
+  $bg12: ($o-theme-bg-img-12)
+);
+
 //------------------------------------------------------------------------------
 // s_animated_boxes
 //------------------------------------------------------------------------------

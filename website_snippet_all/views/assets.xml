@@ -7,6 +7,11 @@
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/primary_variables.scss"/>
         </xpath>
     </template>
+    <template id="_assets_utils" inherit_id="web._assets_utils">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/mixins.scss"/>
+        </xpath>
+    </template>
 
     <template id="assets_frontend" inherit_id="website.assets_frontend" priority="1">
         <xpath expr="//link[last()]" position="after">
@@ -19,6 +24,7 @@
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_pricing.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_process_steps.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_icon_box.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_big_image.scss"/>
         </xpath>
         <xpath expr="//script[last()]" position="after">
             <script
