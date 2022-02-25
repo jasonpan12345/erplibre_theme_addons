@@ -26,6 +26,7 @@
         "views/s_big_image.xml",
         "views/s_big_image_parallax.xml",
         "views/s_text_highlight.xml",
+        "views/s_progress_bar.xml",
     ],
     "installable": True,
 }
