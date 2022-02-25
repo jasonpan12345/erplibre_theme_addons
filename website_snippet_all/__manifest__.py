@@ -20,6 +20,7 @@
         "views/s_discount.xml",
         "views/s_pricing.xml",
         "views/s_process_steps.xml",
+        "views/s_icon_box.xml",
     ],
     "installable": True,
 }
