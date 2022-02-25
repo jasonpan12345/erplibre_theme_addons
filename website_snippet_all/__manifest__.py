@@ -11,6 +11,7 @@
         "views/snippets.xml",
         "views/assets.xml",
         "views/image_content.xml",
+        "views/snippets_options.xml",
         "views/s_color_blocks_2.xml",
         "views/s_color_blocks_4.xml",
         "views/s_column.xml",
@@ -24,6 +25,7 @@
         "views/s_icon_box.xml",
         "views/s_big_image.xml",
         "views/s_big_image_parallax.xml",
+        "views/s_text_highlight.xml",
     ],
     "installable": True,
 }

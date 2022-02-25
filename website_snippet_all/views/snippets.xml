@@ -13,6 +13,7 @@
         </xpath>
         <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_body')]/t" position="before">
             <t t-snippet="website_snippet_all.s_icon_box" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_icon_box.png"/>
+            <t t-snippet="website_snippet_all.s_text_highlight" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_color_block.png"/>
         </xpath>>
         <xpath expr="//div[@id='snippet_feature']/div[hasclass('o_panel_body')]/t" position="before">
             <t t-snippet="website_snippet_all.s_timeline" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_timeline.png"/>
