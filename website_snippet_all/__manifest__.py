@@ -23,6 +23,7 @@
         "views/s_process_steps.xml",
         "views/s_icon_box.xml",
         "views/s_big_image.xml",
+        "views/s_big_image_parallax.xml",
     ],
     "installable": True,
 }
