@@ -28,6 +28,7 @@
         "views/s_text_highlight.xml",
         "views/s_progress_bar.xml",
         "views/s_team_profiles.xml",
+        "views/s_profile.xml",
     ],
     "installable": True,
 }
