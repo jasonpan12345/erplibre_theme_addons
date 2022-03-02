@@ -31,6 +31,7 @@
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_profile.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_animated_boxes.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_showcase.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_media_list.scss"/>
         </xpath>
     </template>
 
