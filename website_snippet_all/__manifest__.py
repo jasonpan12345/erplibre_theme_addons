@@ -40,6 +40,7 @@
         "views/s_text_picture_text.xml",
         "views/s_header_text_big_picture.xml",
         "views/s_product_list.xml",
+        "views/s_features_carousel.xml",
     ],
     "installable": True,
 }
