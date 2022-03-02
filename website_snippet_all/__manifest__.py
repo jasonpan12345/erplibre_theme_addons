@@ -33,6 +33,7 @@
         "views/s_showcase.xml",
         "views/s_numbers.xml",
         "views/s_media_list.xml",
+        "views/s_masonry_block.xml",
     ],
     "installable": True,
 }
