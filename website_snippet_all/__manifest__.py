@@ -30,6 +30,7 @@
         "views/s_team_profiles.xml",
         "views/s_profile.xml",
         "views/s_animated_boxes.xml",
+        "views/s_showcase.xml",
     ],
     "installable": True,
 }
