@@ -38,6 +38,7 @@
         "views/s_showcase_slider.xml",
         "views/s_color_blocks_img.xml",
         "views/s_text_picture_text.xml",
+        "views/s_header_text_big_picture.xml",
     ],
     "installable": True,
 }

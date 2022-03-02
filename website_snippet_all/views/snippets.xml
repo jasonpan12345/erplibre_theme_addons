@@ -16,6 +16,7 @@
             <t t-snippet="website_snippet_all.s_media_list" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_media_list.png"/>
             <t t-snippet="website_snippet_all.s_masonry_block" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_masonry_block.png"/>
             <t t-snippet="website_snippet_all.s_text_picture_text" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_text_picture_text.png"/>
+            <t t-snippet="website_snippet_all.s_header_text_big_picture" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_header_text_bigpicture.png"/>
         </xpath>
         <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_body')]/t" position="before">
             <t t-snippet="website_snippet_all.s_icon_box" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_icon_box.png"/>
