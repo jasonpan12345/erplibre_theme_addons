@@ -6,7 +6,7 @@
     "license": "AGPL-3",
     "website": "https://technolibre.ca",
     "application": True,
-    "depends": ["website"],
+    "depends": ["website_animate"],
     "data": [
         "views/snippets.xml",
         "views/assets.xml",
@@ -29,6 +29,7 @@
         "views/s_progress_bar.xml",
         "views/s_team_profiles.xml",
         "views/s_profile.xml",
+        "views/s_animated_boxes.xml",
     ],
     "installable": True,
 }

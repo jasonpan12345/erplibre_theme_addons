@@ -29,12 +29,14 @@
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_text_highlight.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_team_profiles.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_profile.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_animated_boxes.scss"/>
         </xpath>
     </template>
 
     <template id="assets_editor" inherit_id="website.assets_editor">
         <xpath expr="//script[last()]" position="after">
             <script type="text/javascript" src="/website_snippet_all/static/src/js/s_progress_bar.js"></script>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_animated_boxes_editor.js"></script>
         </xpath>
     </template>
 </odoo>

@@ -9,7 +9,7 @@
             <t t-snippet="website_snippet_all.s_column" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_column.png"/>
             <t t-snippet="website_snippet_all.s_two_columns" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_two_columns.png"/>
             <t t-snippet="website_snippet_all.s_three_columns_circle" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_three_columns_circle.png"/>
-
+            <t t-snippet="website_snippet_all.s_animated_boxes" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_animated_blocks.jpg"/>
         </xpath>
         <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_body')]/t" position="before">
             <t t-snippet="website_snippet_all.s_icon_box" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_icon_box.png"/>
