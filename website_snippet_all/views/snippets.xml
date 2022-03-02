@@ -41,6 +41,7 @@
         <xpath expr="//div[@id='snippet_effect']/div[hasclass('o_panel_body')]/t" position="before">
             <t t-snippet="website_snippet_all.s_big_image" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_big_image.png"/>
             <t t-snippet="website_snippet_all.s_big_image_parallax" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_big_image.png"/>
+            <t t-snippet="website_snippet_all.s_banner_parallax" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_full_height_banner.png"/>
         </xpath>
     </template>
 </odoo>
