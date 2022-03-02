@@ -39,6 +39,7 @@
         "views/s_color_blocks_img.xml",
         "views/s_text_picture_text.xml",
         "views/s_header_text_big_picture.xml",
+        "views/s_product_list.xml",
     ],
     "installable": True,
 }
