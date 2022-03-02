@@ -35,6 +35,7 @@
         "views/s_media_list.xml",
         "views/s_masonry_block.xml",
         "views/s_media_block.xml",
+        "views/s_showcase_slider.xml",
     ],
     "installable": True,
 }
