@@ -33,14 +33,19 @@
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_showcase.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_media_list.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_masonry_block.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_media_block.scss"/>
+        </xpath>
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_media_block_frontend.js"/>
         </xpath>
     </template>
 
     <template id="assets_editor" inherit_id="website.assets_editor">
         <xpath expr="//script[last()]" position="after">
-            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_progress_bar.js"></script>
-            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_animated_boxes_editor.js"></script>
-            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_showcase_editor.js"></script>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_progress_bar.js"/>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_animated_boxes_editor.js"/>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_showcase_editor.js"/>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_media_block_editor.js"/>
         </xpath>
     </template>
 </odoo>
