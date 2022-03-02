@@ -35,6 +35,7 @@
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_masonry_block.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_media_block.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_showcase_slider.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_color_blocks_img.scss"/>
         </xpath>
         <xpath expr="//script[last()]" position="after">
             <script type="text/javascript" src="/website_snippet_all/static/src/js/s_media_block_frontend.js"/>

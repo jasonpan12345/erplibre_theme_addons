@@ -6,6 +6,7 @@
         <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
             <t t-snippet="website_snippet_all.s_color_blocks_2" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_color_block.png"/>
             <t t-snippet="website_snippet_all.s_color_blocks_4" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_color_block.png"/>
+            <t t-snippet="website_snippet_all.s_color_blocks_img" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_color_block.png"/>
             <t t-snippet="website_snippet_all.s_column" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_column.png"/>
             <t t-snippet="website_snippet_all.s_two_columns" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_two_columns.png"/>
             <t t-snippet="website_snippet_all.s_three_columns_circle" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_three_columns_circle.png"/>
