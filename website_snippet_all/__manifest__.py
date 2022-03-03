@@ -49,6 +49,7 @@
         "views/s_showcase_image.xml",
         "views/s_clonable_boxes.xml",
         "views/s_images_carousel.xml",
+        "views/s_menu_three_columns.xml",
     ],
     "installable": True,
 }

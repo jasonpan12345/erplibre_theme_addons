@@ -22,6 +22,7 @@
             <t t-snippet="website_snippet_all.s_big_icons" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_big_icon_circle.png"/>
             <t t-snippet="website_snippet_all.s_showcase_image" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_showcase_image.jpg"/>
             <t t-snippet="website_snippet_all.s_clonable_boxes" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_clonable_boxes.jpg"/>
+            <t t-snippet="website_snippet_all.s_menu_three_columns" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_3column_menu.png"/>
         </xpath>
         <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_body')]/t" position="before">
             <t t-snippet="website_snippet_all.s_icon_box" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_icon_box.png"/>
