@@ -49,6 +49,7 @@
             <t t-snippet="website_snippet_all.s_news_carousel" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_news_carousel.png"/>
             <t t-snippet="website_snippet_all.s_images_carousel" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_images_carousel.png"/>
             <t t-snippet="website_snippet_all.s_mini_nav_bar" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_big_image.png"/>
+            <t t-snippet="website_snippet_all.s_separator_nav" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_process_step.png"/>
         </xpath>
     </template>
 </odoo>

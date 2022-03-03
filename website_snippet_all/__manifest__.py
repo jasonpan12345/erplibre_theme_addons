@@ -51,6 +51,7 @@
         "views/s_images_carousel.xml",
         "views/s_menu_three_columns.xml",
         "views/s_mini_nav_bar.xml",
+        "views/s_separator_nav.xml",
     ],
     "installable": True,
 }
