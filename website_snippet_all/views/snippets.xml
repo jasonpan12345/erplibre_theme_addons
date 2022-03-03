@@ -20,6 +20,7 @@
             <t t-snippet="website_snippet_all.s_product_list" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_product_list.png"/>
             <t t-snippet="website_snippet_all.s_features_carousel" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_features.png"/>
             <t t-snippet="website_snippet_all.s_big_icons" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_big_icon_circle.png"/>
+            <t t-snippet="website_snippet_all.s_showcase_image" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_showcase_image.jpg"/>
         </xpath>
         <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_body')]/t" position="before">
             <t t-snippet="website_snippet_all.s_icon_box" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_icon_box.png"/>

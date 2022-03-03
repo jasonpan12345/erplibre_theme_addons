@@ -46,6 +46,7 @@
         "views/s_banner_parallax.xml",
         "views/s_news_carousel.xml",
         "views/s_badge.xml",
+        "views/s_showcase_image.xml",
     ],
     "installable": True,
 }
