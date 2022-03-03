@@ -55,6 +55,7 @@
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_separator_nav.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_full_menu.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_event_slide.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_compact_menu.scss"/>
         </xpath>
         <xpath expr="//script[last()]" position="after">
             <script type="text/javascript" src="/website_snippet_all/static/src/js/s_media_block_frontend.js"/>

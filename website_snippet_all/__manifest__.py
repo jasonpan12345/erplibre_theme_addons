@@ -54,6 +54,7 @@
         "views/s_separator_nav.xml",
         "views/s_full_menu.xml",
         "views/s_event_slide.xml",
+        "views/s_compact_menu.xml",
     ],
     "installable": True,
 }
