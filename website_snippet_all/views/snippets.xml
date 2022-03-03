@@ -41,6 +41,7 @@
             <t t-snippet="website_snippet_all.s_media_block" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_media_block-thumb.jpg"/>
             <t t-snippet="website_snippet_all.s_showcase_slider" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_showcase_slider.jpg"/>
             <t t-snippet="website_snippet_all.s_products_carousel" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_products_carousel.png"/>
+            <t t-snippet="website_snippet_all.s_full_menu" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_full_menu.png"/>
         </xpath>
         <xpath expr="//div[@id='snippet_effect']/div[hasclass('o_panel_body')]/t" position="before">
             <t t-snippet="website_snippet_all.s_big_image" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_big_image.png"/>

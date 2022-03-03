@@ -52,6 +52,7 @@
         "views/s_menu_three_columns.xml",
         "views/s_mini_nav_bar.xml",
         "views/s_separator_nav.xml",
+        "views/s_full_menu.xml",
     ],
     "installable": True,
 }

@@ -53,6 +53,7 @@
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_menu_three_columns.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_mini_nav_bar.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_separator_nav.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_full_menu.scss"/>
         </xpath>
         <xpath expr="//script[last()]" position="after">
             <script type="text/javascript" src="/website_snippet_all/static/src/js/s_media_block_frontend.js"/>
