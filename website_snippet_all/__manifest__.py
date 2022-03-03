@@ -47,6 +47,7 @@
         "views/s_news_carousel.xml",
         "views/s_badge.xml",
         "views/s_showcase_image.xml",
+        "views/s_clonable_boxes.xml",
     ],
     "installable": True,
 }
