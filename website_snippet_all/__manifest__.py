@@ -48,6 +48,7 @@
         "views/s_badge.xml",
         "views/s_showcase_image.xml",
         "views/s_clonable_boxes.xml",
+        "views/s_images_carousel.xml",
     ],
     "installable": True,
 }
