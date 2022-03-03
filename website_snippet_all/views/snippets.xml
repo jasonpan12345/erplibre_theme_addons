@@ -48,6 +48,7 @@
             <t t-snippet="website_snippet_all.s_banner_parallax" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_full_height_banner.png"/>
             <t t-snippet="website_snippet_all.s_news_carousel" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_news_carousel.png"/>
             <t t-snippet="website_snippet_all.s_images_carousel" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_images_carousel.png"/>
+            <t t-snippet="website_snippet_all.s_mini_nav_bar" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_big_image.png"/>
         </xpath>
     </template>
 </odoo>

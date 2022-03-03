@@ -50,6 +50,7 @@
         "views/s_clonable_boxes.xml",
         "views/s_images_carousel.xml",
         "views/s_menu_three_columns.xml",
+        "views/s_mini_nav_bar.xml",
     ],
     "installable": True,
 }
