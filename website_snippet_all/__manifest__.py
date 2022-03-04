@@ -55,6 +55,7 @@
         "views/s_full_menu.xml",
         "views/s_event_slide.xml",
         "views/s_compact_menu.xml",
+        "views/s_css_slider.xml",
     ],
     "installable": True,
 }
