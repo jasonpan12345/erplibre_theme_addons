@@ -56,6 +56,7 @@
         "views/s_event_slide.xml",
         "views/s_compact_menu.xml",
         "views/s_css_slider.xml",
+        "views/s_google_map.xml",
     ],
     "installable": True,
 }

@@ -57,12 +57,14 @@
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_event_slide.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_compact_menu.scss"/>
             <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_css_slider.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_google_map.scss"/>
         </xpath>
         <xpath expr="//script[last()]" position="after">
             <script type="text/javascript" src="/website_snippet_all/static/src/js/s_media_block_frontend.js"/>
             <script type="text/javascript" src="/website_snippet_all/static/src/js/s_showcase_slider_frontend.js"/>
             <script type="text/javascript" src="/website_snippet_all/static/src/js/s_mini_nav_bar.js"/>
             <script type="text/javascript" src="/website_snippet_all/static/src/js/s_css_slider_frontend.js"/>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_google_map_frontend.js"/>
         </xpath>
     </template>
 
@@ -74,6 +76,7 @@
             <script type="text/javascript" src="/website_snippet_all/static/src/js/s_media_block_editor.js"/>
             <script type="text/javascript" src="/website_snippet_all/static/src/js/s_showcase_slider_editor.js"/>
             <script type="text/javascript" src="/website_snippet_all/static/src/js/s_css_slider_editor.js"/>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_google_map_editor.js"/>
         </xpath>
     </template>
 </odoo>
