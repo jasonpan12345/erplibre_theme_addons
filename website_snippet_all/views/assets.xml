@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <!-- Add stylesheet and Javascript -->
+    <template id="_assets_primary_variables" inherit_id="website._assets_primary_variables" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/primary_variables.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/snippets/s_features_carousel.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/snippets/s_products_carousel.scss"/>
+        </xpath>
+    </template>
+    <template id="_assets_utils" inherit_id="web._assets_utils">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/mixins.scss"/>
+        </xpath>
+    </template>
+
+    <template id="assets_frontend" inherit_id="website.assets_frontend" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_color_blocks_2.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_color_blocks_4.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_two_columns.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_timeline.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_event_list.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_discount.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_pricing.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_process_steps.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_icon_box.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_big_image.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_big_image_parallax.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_text_highlight.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_team_profiles.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_profile.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_animated_boxes.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_showcase.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_media_list.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_masonry_block.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_media_block.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_showcase_slider.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_color_blocks_img.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_text_picture_text.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_header_text_big_picture.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_product_list.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_features_carousel.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_products_carousel.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_big_icons.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_banner_parallax.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_news_carousel.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_badge.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_showcase_image.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_clonable_boxes.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_images_carousel.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_menu_three_columns.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_mini_nav_bar.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_separator_nav.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_full_menu.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_event_slide.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_compact_menu.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_css_slider.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/website_snippet_all/static/src/scss/s_google_map.scss"/>
+        </xpath>
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_media_block_frontend.js"/>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_showcase_slider_frontend.js"/>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_mini_nav_bar.js"/>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_css_slider_frontend.js"/>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_google_map_frontend.js"/>
+        </xpath>
+    </template>
+
+    <template id="assets_editor" inherit_id="website.assets_editor">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_progress_bar.js"/>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_animated_boxes_editor.js"/>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_showcase_editor.js"/>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_media_block_editor.js"/>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_showcase_slider_editor.js"/>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_css_slider_editor.js"/>
+            <script type="text/javascript" src="/website_snippet_all/static/src/js/s_google_map_editor.js"/>
+        </xpath>
+    </template>
+</odoo>
