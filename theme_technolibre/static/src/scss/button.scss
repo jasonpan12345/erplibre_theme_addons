@@ -1,0 +1,13 @@
+// License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+
+#wrapwrap {
+  .btn {
+    border-radius: 0;
+    white-space: nowrap;
+    text-transform: capitalize !important;
+  }
+  .btn-lg {
+    font-weight: bold;
+    padding: 8px 24px;
+  }
+}

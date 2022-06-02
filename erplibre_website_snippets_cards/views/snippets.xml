@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+  <!-- Snippet Content-->
+  <template id="s_cards_extend" name="Extendable Cards">
+    <section class="o_cards_extend pt16 pb16 bg-200">
+      <div class="container">
+        <div class="row">
+          <div class="o_card_extend col-lg-4 col-md-6 col-sm-12">
+            <div class="card-extend__img">
+              <img class="o_image_fluid img img-fluid" src="/web/image/website.s_picture_default_image" alt="Product illustration"/>
+            </div>
+            <div class="card-extend__text bg-100">
+              <div class="card-extend__title">
+                <img class="img img-fluid" src="/erplibre_website_snippets_cards/static/src/img/cards_extend.png" alt="icon"/>
+                <h4 class="o_h4">Extend on Click</h4>
+              </div>
+              <p class="o_p">Duplicate Me. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="o_card_extend col-lg-4 col-md-6 col-sm-12">
+            <div class="card-extend__img">
+              <img class="o_image_fluid img img-fluid" src="/web/image/website.s_picture_default_image" alt="Product illustration"/>
+            </div>
+            <div class="card-extend__text bg-100">
+              <div class="card-extend__title">
+                <img class="img img-fluid" src="/erplibre_website_snippets_cards/static/src/img/cards_extend.png" alt="icon"/>
+                <h4 class="o_h4">Extend on Click</h4>
+              </div>
+              <p class="o_p">Duplicate Me. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="o_card_extend col-lg-4 col-md-6 col-sm-12">
+            <div class="card-extend__img">
+              <img class="o_image_fluid img img-fluid" src="/web/image/website.s_picture_default_image" alt="Product illustration"/>
+            </div>
+            <div class="card-extend__text bg-100">
+              <div class="card-extend__title">
+                <img class="img img-fluid" src="/erplibre_website_snippets_cards/static/src/img/cards_extend.png" alt="icon"/>
+                <h4 class="o_h4">Extend on Click</h4>
+              </div>
+              <p class="o_p">Duplicate Me. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <template id="s_cards_flip" name="Flippable Cards">
+    <section class="o_cards_flip pt16 pb16">
+      <div class="container">
+        <div class="row">
+          <div class="o_card_flip col-lg-4 col-md-6 col-sm-12">
+            <div class="card-flip__inner">
+              <div class="card-flip__front bg-200">
+                <h5>Make me flippable</h5>
+                <div class="o_avatar">
+                  <img class="img img-fluid" src="/erplibre_website_snippets_cards/static/src/img/portrait.png" alt="Avatar"/>
+                </div>
+                <h4>Duplicate Me</h4>
+                <div class="card-flip__icons">
+                  <a href="https://www.linkedin.com/">
+                    <i class="fa fa-linkedin-square"/>
+                  </a>
+                  <a href="https://github.com//">
+                    <i class="fa fa-github-square"/>
+                  </a>
+                  <a href="mailto: #">
+                    <i class="fa fa-envelope-o"/>
+                  </a>
+                </div>
+              </div>
+              <div class="card-flip__back bg-200">
+                <div>
+                  <h4>Duplicate Me</h4>
+                  <h5>Full Stack Developer</h5>
+                </div>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="card-flip__icons">
+                  <a href="https://www.linkedin.com/">
+                    <i class="fa fa-linkedin-square"/>
+                  </a>
+                  <a href="https://github.com/">
+                    <i class="fa fa-github"/>
+                  </a>
+                  <a href="mailto: #">
+                    <i class="fa fa-envelope-o"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="o_card_flip col-lg-4 col-md-6 col-sm-12">
+            <div class="card-flip__inner">
+              <div class="card-flip__front bg-200">
+                <h5>Make me flippable</h5>
+                <div class="o_avatar">
+                  <img class="img img-fluid" src="/erplibre_website_snippets_cards/static/src/img/portrait.png" alt="Avatar"/>
+                </div>
+                <h4>Duplicate Me</h4>
+                <div class="card-flip__icons">
+                  <a href="https://www.linkedin.com/">
+                    <i class="fa fa-linkedin-square"/>
+                  </a>
+                  <a href="https://github.com//">
+                    <i class="fa fa-github-square"/>
+                  </a>
+                  <a href="mailto: #">
+                    <i class="fa fa-envelope-o"/>
+                  </a>
+                </div>
+              </div>
+              <div class="card-flip__back bg-200">
+                <div>
+                  <h4>Duplicate Me</h4>
+                  <h5>Full Stack Developer</h5>
+                </div>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="card-flip__icons">
+                  <a href="https://www.linkedin.com/">
+                    <i class="fa fa-linkedin-square"/>
+                  </a>
+                  <a href="https://github.com/">
+                    <i class="fa fa-github"/>
+                  </a>
+                  <a href="mailto: #">
+                    <i class="fa fa-envelope-o"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="o_card_flip col-lg-4 col-md-6 col-sm-12">
+            <div class="card-flip__inner">
+              <div class="card-flip__front bg-200">
+                <h5>Make me flippable</h5>
+                <div class="o_avatar">
+                  <img class="img img-fluid" src="/erplibre_website_snippets_cards/static/src/img/portrait.png" alt="Avatar"/>
+                </div>
+                <h4>Duplicate Me</h4>
+                <div class="card-flip__icons">
+                  <a href="https://www.linkedin.com/">
+                    <i class="fa fa-linkedin-square"/>
+                  </a>
+                  <a href="https://github.com//">
+                    <i class="fa fa-github-square"/>
+                  </a>
+                  <a href="mailto: #">
+                    <i class="fa fa-envelope-o"/>
+                  </a>
+                </div>
+              </div>
+              <div class="card-flip__back bg-200">
+                <div>
+                  <h4>Duplicate Me</h4>
+                  <h5>Full Stack Developer</h5>
+                </div>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="card-flip__icons">
+                  <a href="https://www.linkedin.com/">
+                    <i class="fa fa-linkedin-square"/>
+                  </a>
+                  <a href="https://github.com/">
+                    <i class="fa fa-github"/>
+                  </a>
+                  <a href="mailto: #">
+                    <i class="fa fa-envelope-o"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <!-- Add snippets to menu -->
+  <template id="add_snippet_structure_to_menu" inherit_id="website.snippets">
+    <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+      <t t-snippet="erplibre_website_snippets_cards.s_cards_extend" t-thumbnail="/erplibre_website_snippets_cards/static/src/img/cards_extend.png"/>
+      <t t-snippet="erplibre_website_snippets_cards.s_cards_flip" t-thumbnail="/erplibre_website_snippets_cards/static/src/img/cards_flip.png"/>
+    </xpath>
+  </template>
+
+  <!-- Add snippets options -->
+  <template id="snippet_options" inherit_id="website.snippet_options">
+    <xpath expr=".">
+      <!-- Flippable options-->
+      <div data-selector=".o_card_flip">
+        <div class="dropdown-submenu">
+          <a tabindex="-2" href="#" class="dropdown-item">
+            <i class="fa-mail-forward"/>Flip on Click?
+          </a>
+          <div class="dropdown-menu" role="menu">
+            <a href="#" class="dropdown-item" data-toggle-class="flippable">Yes/No</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Color options -->
+			<div data-js="colorpicker" data-selector=".card-flip__front, .card-flip__back">
+        <div class="dropdown-submenu">
+          <a tabindex="-1" href="#" class="dropdown-item">
+            <i class="fa fa-eyedropper"/>Color
+          </a>
+          <div class="dropdown-menu" role="menu"/>
+        </div>
+      </div>
+    </xpath>
+  </template>
+
+  <!-- Add stylesheet & javascript-->
+  <template id="assets_frontend_erplibre_website_snippets_cards" inherit_id="website.assets_frontend">
+    <xpath expr="//link[last()]" position="after">
+      <link rel="stylesheet" type="text/scss" href="/erplibre_website_snippets_cards/static/src/scss/snippet_cards_extend.scss" />
+      <link rel="stylesheet" type="text/scss" href="/erplibre_website_snippets_cards/static/src/scss/snippet_cards_flip.scss" />
+    </xpath>
+
+    <xpath expr="//script[last()]" position="after">
+      <script type="text/javascript" src="/erplibre_website_snippets_cards/static/src/js/website_snippet_animation_cards_flip.js"/>
+      <script type="text/javascript" src="/erplibre_website_snippets_cards/static/src/js/website_snippet_animation_cards_extend.js"/>
+    </xpath>
+  </template>
+</odoo>

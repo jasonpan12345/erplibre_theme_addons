@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <template id="report_invoice_erplibre_vertical_header" name="erplibre vertical header template invoice" inherit_id="account.report_invoice_document">
+
+      <!-- add payment terms-->
+      <xpath expr="//*[@id='informations']/div[last()]" position="after">
+        <div class="col-auto mw-100 mb-2" t-if="o.payment_term_id" name="payment_term">
+          <i>
+            <span t-field="o.payment_term_id.note"/>
+          </i>
+        </div>
+      </xpath>
+
+      <!-- format date fields -->
+      <xpath expr="//p[@t-field='o.date_invoice']" position="replace">
+        <p class="m-0" t-esc="o.date_invoice.strftime('%d/%m/%Y')"/>
+      </xpath>
+      <xpath expr="//p[@t-field='o.date_due']" position="replace">
+        <p class="m-0" t-esc="o.date_due.strftime('%d/%m/%Y')"/>
+      </xpath>
+
+      <!-- remove the invoice number in h2-->
+      <xpath expr="//div[@class='page']/h2/span[last()]" position="replace"/>
+
+      <!-- add colgroup-->
+      <xpath expr="//table[@name='invoice_line_table']/thead" position="before">
+        <colgroup>
+          <col span="1" style="width: 40%;" />
+          <col span="1" style="width: 20%;" />
+          <col span="1" style="width: 20%;" />
+          <col span="1" style="width: 20%;" />
+        </colgroup>
+      </xpath>
+
+      <!-- set wanted columns header -->
+      <xpath expr="//table[@name='invoice_line_table']/thead/tr" position="replace">
+        <tr>
+          <th>description</th>
+          <th>qte</th>
+          <th>unit price</th>
+          <th>total</th>
+        </tr>
+      </xpath>
+
+      <!-- remove conditional display -->
+      <xpath expr="//t[@name='account_invoice_line_accountable']/td[4]" position="attributes">
+        <attribute name="t-attf-class">text-right</attribute>
+      </xpath>
+
+      <!-- remove tax & discount column -->
+      <xpath expr="//t[@name='account_invoice_line_accountable']" position="replace">
+        <td name="account_invoice_line_name">
+          <span t-field="line.name"/>
+        </td>
+        <td class="text-right">
+          <span t-field="line.quantity"/>
+          <span t-field="line.uom_id" groups="uom.group_uom"/>
+        </td>
+        <td t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+          <span t-field="line.price_unit"/>
+        </td>
+        <td class="text-right o_price_total">
+          <span t-field="line.price_subtotal" groups="account.group_show_line_subtotals_tax_excluded"/>
+          <span t-field="line.price_total" groups="account.group_show_line_subtotals_tax_included"/>
+        </td>
+      </xpath>
+
+    </template>
+  </data>
+</odoo>

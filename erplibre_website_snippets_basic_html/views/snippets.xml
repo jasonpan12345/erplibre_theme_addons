@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+  <!-- Snippet Content-->
+  <template id="s_avatar" name="Avatar">
+    <div class="o_avatar">
+      <img class="img img-fluid" src="/erplibre_website_snippets_basic_html/static/src/img/portrait.png" alt="Avatar"/>
+    </div>
+  </template>
+
+  <template id="s_media" name="Media">
+    <img class="o_image_fluid img img-fluid" src="/web/image/website.s_picture_default_image" alt="Media"/>
+  </template>
+
+  <template id="s_bullets_finger" name="Finger Bullets">
+    <ul class="o_bullets_finger">
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+    </ul>
+  </template>
+
+  <template id="s_h1" name="h1 Tag">
+    <h1 class="o_h1">ERPLibre rocks!</h1>
+  </template>
+
+  <template id="s_h2" name="h1 Tag">
+    <h2 class="o_h2">ERPLibre rocks!</h2>
+  </template>
+
+  <template id="s_h3" name="h3 Tag">
+    <h3 class="o_h3">ERPLibre rocks!</h3>
+  </template>
+
+  <template id="s_h4" name="h4 Tag">
+    <h4 class="o_h4">ERPLibre rocks!</h4>
+  </template>
+
+  <template id="s_h5" name="h5 Tag">
+    <h5 class="o_h5">ERPLibre rocks!</h5>
+  </template>
+
+  <template id="s_h6" name="h6 Tag">
+    <h6 class="o_h6">ERPLibre rocks!</h6>
+  </template>
+
+  <template id="s_p" name="p Tag">
+    <p class="o_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </template>
+
+  <template id="s_small" name="small Tag">
+    <div class="o_small">
+      <small>ERPLibre rocks!</small>
+    </div>
+  </template>
+
+  <template id="s_pill" name="Pill">
+    <span class="o_pill bg-200">Pew Pew Pew</span>
+  </template>
+
+  <!-- Snippet Structure -->
+  <template id="s_section_header" name="Section Header">
+    <section class="o_section_header text-center pt64 pb16">
+      <div class="container">
+        <h5 class="o_h5 pt8 pb4">Lorem ipsum dolor sit amet</h5>
+        <h2 class="o_h2 pt4 pb8">Lorem ipsum</h2>
+      </div>
+    </section>
+  </template>
+
+  <!-- Customize header -->
+  <template id="custom_layout" inherit_id="website.layout" name="Custom Layout">
+
+    <!-- Assign an id -->
+    <xpath expr="//div[@id='wrapwrap']/header/nav" position="attributes">
+      <attribute name="id">navbar</attribute>
+    </xpath>
+    <!-- Assign an id -->
+    <xpath expr="//div[@id='footer']" position="attributes">
+      <attribute name="id">footer</attribute>
+    </xpath>
+
+  </template>
+
+
+  <!-- Add snippet_content to menu -->
+  <template id="add_snippet_content_to_menu" inherit_id="website.snippets">
+    <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_body')]" position="inside">
+      <t t-snippet="erplibre_website_snippets_basic_html.s_avatar" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/avatar.png"/>
+      <t t-snippet="erplibre_website_snippets_basic_html.s_media" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/media.png"/>
+      <t t-snippet="erplibre_website_snippets_basic_html.s_bullets_finger" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/bullets_finger.png"/>
+      <t t-snippet="erplibre_website_snippets_basic_html.s_h1" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/h1.png"/>
+      <t t-snippet="erplibre_website_snippets_basic_html.s_h2" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/h2.png"/>
+      <t t-snippet="erplibre_website_snippets_basic_html.s_h3" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/h3.png"/>
+      <t t-snippet="erplibre_website_snippets_basic_html.s_h4" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/h4.png"/>
+      <t t-snippet="erplibre_website_snippets_basic_html.s_h5" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/h5.png"/>
+      <t t-snippet="erplibre_website_snippets_basic_html.s_h6" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/h6.png"/>
+      <t t-snippet="erplibre_website_snippets_basic_html.s_p" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/p.png"/>
+      <t t-snippet="erplibre_website_snippets_basic_html.s_small" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/small.png"/>
+      <t t-snippet="erplibre_website_snippets_basic_html.s_pill" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/pill.png"/>
+    </xpath>
+  </template>
+
+  <!-- Add snippet_structure to menu -->
+  <template id="add_snippet_structure_to_menu" inherit_id="website.snippets">
+    <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+      <t t-snippet="erplibre_website_snippets_basic_html.s_section_header" t-thumbnail="/erplibre_website_snippets_basic_html/static/src/img/section_header.png"/>
+    </xpath>
+  </template>
+
+  <!-- Add snippets options -->
+  <template id="snippet_options" inherit_id="website.snippet_options">
+    <xpath expr=".">
+      <!-- Horizontal alignment options | Screensize lg or above-->
+      <div data-selector=".o_avatar, .o_image_fluid, .o_h1, .o_p, .o_small, .s_btn">
+        <div class="dropdown-submenu">
+          <a tabindex="-2" href="#" class="dropdown-item">
+            <i class="fa fa-desktop"/>Alignment(+=LG)</a>
+          <div class="dropdown-menu" role="menu">
+            <a href="#" class="dropdown-item" data-select-class="text-lg-left">Left</a>
+            <a href="#" class="dropdown-item" data-select-class="text-lg-center">Center</a>
+            <a href="#" class="dropdown-item" data-select-class="text-lg-right">Right</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horizontal alignment options | Screensize md or below-->
+      <div data-selector=".o_avatar, .o_image_fluid, .o_h1, .o_p, .o_small, .s_btn">
+        <div class="dropdown-submenu">
+          <a tabindex="-2" href="#" class="dropdown-item">
+            <i class="fa fa-mobile-phone"/>Alignment(-=MD)
+          </a>
+          <div class="dropdown-menu" role="menu">
+            <a href="#" class="dropdown-item" data-select-class="text-md-left">Left</a>
+            <a href="#" class="dropdown-item" data-select-class="text-md-center">Center</a>
+            <a href="#" class="dropdown-item" data-select-class="text-md-right">Right</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vertical alignment options -->
+      <div data-js="sizing_y" data-selector=".o_avatar, .o_image_fluid, o_bullets_finger, .o_h1, .o_h2, .o_h3, .o_h4, .o_h5, .o_h6, .o_p, .o_small"/>
+
+      <!-- Hidden options based on screensize-->
+      <div data-selector=".o_image_fluid">
+        <div class="dropdown-submenu">
+          <a tabindex="-2" href="#" class="dropdown-item">
+            <i class="fa fa-eye"/>Visiblility
+          </a>
+          <div class="dropdown-menu" role="menu">
+            <a href="#" class="dropdown-item" data-select-class="d-none d-lg-block">Visible above LG</a>
+            <a href="#" class="dropdown-item" data-select-class="d-block d-lg-none d-xl-none">Visible below LG</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Position options-->
+      <div data-selector=".o_image_fluid, .o_h3, .o_h4">
+        <div class="dropdown-submenu">
+          <a tabindex="-2" href="#" class="dropdown-item">
+            <i class="fa fa-css3"/>Position
+          </a>
+          <div class="dropdown-menu" role="menu">
+            <a href="#" class="dropdown-item" data-select-class="position-relative">Relative</a>
+            <a href="#" class="dropdown-item" data-select-class="position-absolute">Absolute</a>
+            <a href="#" class="dropdown-item" data-select-class="position-fixed">Fixed</a>
+            <a href="#" class="dropdown-item" data-select-class="position-sticky">Sticky</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Absolute position options-->
+      <div data-selector=".o_image_fluid">
+        <div class="dropdown-submenu">
+          <a tabindex="-2" href="#" class="dropdown-item">
+            <i class="fa fa-arrows"/>Absolute Positioning
+          </a>
+          <div class="dropdown-menu" role="menu">
+            <a href="#" class="dropdown-item" data-select-class="top-left">Top-left</a>
+            <a href="#" class="dropdown-item" data-select-class="top-right">Top-right</a>
+            <a href="#" class="dropdown-item" data-select-class="bottom-left">Bottom-left</a>
+            <a href="#" class="dropdown-item" data-select-class="bottom-right">Bottom-right</a>
+            <a href="#" class="dropdown-item" data-select-class="absolute-center">Center</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Color options -->
+			<div data-js="colorpicker" data-selector=".o_pill, .o_image_fluid">
+        <div class="dropdown-submenu">
+          <a tabindex="-1" href="#" class="dropdown-item">
+            <i class="fa fa-eyedropper"/>Color
+          </a>
+          <div class="dropdown-menu" role="menu"/>
+        </div>
+      </div>
+
+      <!-- Drag & drop options -->
+      <div data-js="content"
+        data-selector=".o_avatar, .o_image_fluid, .o_bullets_finger, .o_h1, .o_h2, .o_h3, .o_h4, .o_h5, .o_h6, .o_p, .o_small, .o_pill"
+        data-drop-near="p, h1, h2, h3, blockquote, .s_btn, .s_card, .s_alert, .o_facebook_page, .s_share, .s_rating, .s_hr, .o_avatar, .o_image_fluid, .o_bullets_finger, .o_h1, .o_h2, .o_h3, .o_h4, .o_h5, .o_h6, .o_p, .o_small, .o_pill"
+        data-drop-in=".content"/>
+
+      <!-- Mobile Align-->
+      <div data-selector=".col-lg-12, col-lg-6, .col-lg-4, .col-lg-3, .col-lg-2">
+        <div class="dropdown-submenu">
+          <a tabindex="-2" href="#" class="dropdown-item">
+            <i class="fa fa-arrows"/>Mobile Align
+          </a>
+          <div class="dropdown-menu" role="menu">
+            <a href="#" class="dropdown-item" data-select-class="">Default</a>
+            <div class="dropdown-divider"/>
+            <a href="#" class="dropdown-item" data-select-class="mobile-align-left">Align-left</a>
+            <a href="#" class="dropdown-item" data-select-class="mobile-align-center">Align-center</a>
+            <a href="#" class="dropdown-item" data-select-class="mobile-align-right">Align-right</a>
+          </div>
+        </div>
+      </div>
+
+    </xpath>
+
+  </template>
+
+  <!-- Add stylesheet -->
+  <template id="assets_frontend_erplibre_website_snippets_basic_html" inherit_id="website.assets_frontend">
+    <xpath expr="//link[last()]" position="after">
+      <link rel="stylesheet" type="text/scss" href="/erplibre_website_snippets_basic_html/static/src/scss/snippet.scss"/>
+    </xpath>
+  </template>
+</odoo>

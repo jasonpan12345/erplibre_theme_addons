@@ -1,0 +1,54 @@
+// License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+
+.o_card_extend {
+	overflow: hidden;
+	height: min-content;
+	margin: 1rem 0;
+	padding: 0 1rem;
+	cursor: pointer;
+	
+	.card-extend__img {
+		width: 100%;
+		height: 220px;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.card-extend__text {
+		padding: 12px;
+		.card-extend__title {
+			display: flex;
+			align-items: center;
+		}
+		img {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			margin-right: 8px;
+			border: 1px solid lightgray;
+		}
+		h4 {
+			margin: 0;
+			white-space: nowrap;
+		}
+		p {
+			margin: 0;
+			opacity: 0;
+			visibility: hidden;
+			height: 0;
+			overflow: hidden;
+			transition: all 0.8s ease-out;
+		}
+	}
+
+	&.extended p {
+		opacity: 1;
+		visibility: visible;
+		height: auto;
+		margin-top: 1rem;
+	}
+}

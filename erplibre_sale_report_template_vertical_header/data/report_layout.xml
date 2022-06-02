@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="report_layout_erplibre_vertical_header" model="report.layout">
+      <field name="view_id" ref="external_layout_erplibre_vertical_header"/>
+      <field name="image">/erplibre_sale_report_template_vertical_header/static/img/icon.png</field>
+      <field name="pdf">/erplibre_sale_report_template_vertical_header/static/pdf/example_erplibre_vertical_header.pdf</field>
+      <field name="paperformat_id" ref="erplibre_sale_report_template_vertical_header.paperformat_erplibre_vertical_header"/>
+    </record>
+  </data>
+</odoo>
+

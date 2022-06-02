@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <!-- Add snippets to menu -->
+    <template id="snippets" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="website_snippet_all.s_color_blocks_2" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_color_block.png"/>
+            <t t-snippet="website_snippet_all.s_color_blocks_4" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_color_block.png"/>
+            <t t-snippet="website_snippet_all.s_color_blocks_img" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_color_block.png"/>
+            <t t-snippet="website_snippet_all.s_column" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_column.png"/>
+            <t t-snippet="website_snippet_all.s_two_columns" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_two_columns.png"/>
+            <t t-snippet="website_snippet_all.s_three_columns_circle" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_three_columns_circle.png"/>
+            <t t-snippet="website_snippet_all.s_animated_boxes" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_animated_blocks.jpg"/>
+            <t t-snippet="website_snippet_all.s_showcase" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_showcase.jpg"/>
+            <t t-snippet="website_snippet_all.s_numbers" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_numbers.png"/>
+            <t t-snippet="website_snippet_all.s_media_list" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_media_list.png"/>
+            <t t-snippet="website_snippet_all.s_masonry_block" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_masonry_block.png"/>
+            <t t-snippet="website_snippet_all.s_text_picture_text" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_text_picture_text.png"/>
+            <t t-snippet="website_snippet_all.s_header_text_big_picture" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_header_text_bigpicture.png"/>
+            <t t-snippet="website_snippet_all.s_product_list" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_product_list.png"/>
+            <t t-snippet="website_snippet_all.s_features_carousel" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_features.png"/>
+            <t t-snippet="website_snippet_all.s_big_icons" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_big_icon_circle.png"/>
+            <t t-snippet="website_snippet_all.s_icon_box" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_icon_box.png"/>
+            <t t-snippet="website_snippet_all.s_showcase_image" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_showcase_image.jpg"/>
+            <t t-snippet="website_snippet_all.s_clonable_boxes" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_clonable_boxes.jpg"/>
+            <t t-snippet="website_snippet_all.s_menu_three_columns" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_3column_menu.png"/>
+        </xpath>
+        <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_body')]/t" position="before">
+            <t t-snippet="website_snippet_all.s_text_highlight" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_color_block.png"/>
+            <t t-snippet="website_snippet_all.s_progress_bar" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_progress_bar.png"/>
+            <t t-snippet="website_snippet_all.s_badge" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_badge.png"/>
+        </xpath>>
+        <xpath expr="//div[@id='snippet_feature']/div[hasclass('o_panel_body')]/t" position="before">
+            <t t-snippet="website_snippet_all.s_timeline" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_timeline.png"/>
+            <t t-snippet="website_snippet_all.s_event_list" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_event_list.png"/>
+            <t t-snippet="website_snippet_all.s_discount" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_comparison.png"/>
+            <t t-snippet="website_snippet_all.s_pricing" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_comparison.png"/>
+            <t t-snippet="website_snippet_all.s_process_steps" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_process_step.png"/>
+            <t t-snippet="website_snippet_all.s_team_profiles" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_team_profiles.png"/>
+            <t t-snippet="website_snippet_all.s_profile" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_profile.png"/>
+            <t t-snippet="website_snippet_all.s_media_block" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_media_block-thumb.jpg"/>
+            <t t-snippet="website_snippet_all.s_showcase_slider" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_showcase_slider.jpg"/>
+            <t t-snippet="website_snippet_all.s_products_carousel" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_products_carousel.png"/>
+            <t t-snippet="website_snippet_all.s_full_menu" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_full_menu.png"/>
+            <t t-snippet="website_snippet_all.s_event_slide" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_event_slide.png"/>
+            <t t-snippet="website_snippet_all.s_compact_menu" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_compact_menu.png"/>
+            <t t-snippet="website_snippet_all.s_css_slider" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_css_slider.jpg"/>
+            <t t-snippet="website_snippet_all.s_google_map" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_google_map.png"/>
+        </xpath>
+        <xpath expr="//div[@id='snippet_effect']/div[hasclass('o_panel_body')]/t" position="before">
+            <t t-snippet="website_snippet_all.s_big_image" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_big_image.png"/>
+            <t t-snippet="website_snippet_all.s_big_image_parallax" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_big_image.png"/>
+            <t t-snippet="website_snippet_all.s_banner_parallax" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_full_height_banner.png"/>
+            <t t-snippet="website_snippet_all.s_news_carousel" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_news_carousel.png"/>
+            <t t-snippet="website_snippet_all.s_images_carousel" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_images_carousel.png"/>
+            <t t-snippet="website_snippet_all.s_mini_nav_bar" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_big_image.png"/>
+            <t t-snippet="website_snippet_all.s_separator_nav" t-thumbnail="/website_snippet_all/static/src/img/snippet/s_process_step.png"/>
+        </xpath>
+    </template>
+</odoo>
